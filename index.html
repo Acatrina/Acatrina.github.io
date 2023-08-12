@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warframe Market App</title>
+</head>
+
+<body>
+    <h2 id="heading">Warframe Market App</h2>
+    
+    <div id="user_search">
+        <label for="search_item">What to search for:</label>
+        <br>
+        <input type="text" id="search_item">
+    </div>
+
+    <div id="user_preferences"> 
+        <p id="preferences_title">Preferences</p>
+        <p>* If none are checked the search returns the prices of the item as such: 
+            sell price (average of first 5 online offers) / 
+            buy price (average of first 5 online offers) </p>
+
+        <label for="search_preferences1">
+            <input type="checkbox" value="setVSpieces" id="search_preferences1">
+            Show Set and individual piece price S(avg)/B(avg)
+        </label>
+
+        <label for="search_preferences2">
+            <input type="checkbox" value="offline" id="search_preferences2">
+            Include offline offers
+        </label>
+        
+    </div>
+    
+    <button id="btn_search"> Search </button>
+
+    <div id="user_results">
+        <p>Search results</p>
+        <div id="search_results"></div>
+    </div>
+
+    <div id="test">
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="index.js" ></script>
+</body>
+</html>
